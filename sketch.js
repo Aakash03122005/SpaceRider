@@ -45,7 +45,7 @@ function preload()
 
     // UI Elements
     boomImg = loadImage("images/Boom2.png");
-    boom2Img = loadImage("images/Boom3.png");
+    //boom2Img = loadImage("images/Boom3.png");
     niceImg = loadImage("images/nice.png");
     winImg = loadImage("images/win.png");
     titleImg = loadImage("images/title.png");
