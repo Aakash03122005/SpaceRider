@@ -17,7 +17,7 @@ var missileSound
 var explosionSound
 
 var boom,boomImg
-var boom2,boom2Img
+
 
 var playButton,playButtonImage
 var wellcome,wellcomeImg,title,titleImg
@@ -45,7 +45,6 @@ function preload()
 
     // UI Elements
     boomImg = loadImage("images/Boom2.png");
-    boom2Img = loadImage("images/Boom3.png");
     niceImg = loadImage("images/nice.png");
     winImg = loadImage("images/win.png");
     titleImg = loadImage("images/title.png");
@@ -93,7 +92,7 @@ function setup(){
     // to see the collider
 
     boom = createSprite(200,200,50,50);
-    boom2 = createSprite(200,200,50,50);
+   
 
     obastacle1Group = new Group();
     bullet1Group = new Group();
@@ -140,8 +139,7 @@ function draw(){
         boom.visible=false;
         boom.scale = 0.5;
 
-        boom2.visible=false;
-        boom2.scale = 0.5;
+      
 
         win.addImage(winImg);
         win.scale=1;
@@ -196,10 +194,6 @@ function draw(){
             bullet1Group.destroyEach();
             bulletGroup.destroyEach();
             missileSound.play();
-            //boom2.addImage(boomImg);
-            //boom2.visible=true;
-           
-
         }
 
         if(obastacle1Group.isTouching(box) || bullet1Group.isTouching(box) )
